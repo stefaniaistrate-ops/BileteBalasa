@@ -32,7 +32,15 @@
 <script>
 const params = new URLSearchParams(window.location.search);
 const name = params.get("name");
-const validNames = ["Istrate Daria Stefania"];
+const validNames = [
+    "Istrate Daria Stefania",
+    "Popescu Alina Elena",
+    "Abaza Beatrice",
+    "Vlad Ana-Maria",
+    "Dinescu Iustin-Andrei",
+    "Zamfir Rares Marian",
+    "Enache Adiana Cătălina Gabriela"
+  ];
 
 document.getElementById("name").innerText = name ? name : "Fără nume în link";
 
@@ -45,4 +53,5 @@ if (name && validNames.includes(name)) {
 }
 </script>
 </body>
+
 </html>
